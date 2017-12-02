@@ -15,7 +15,9 @@ nav {
 }
 
 div,
-nav {
+nav,
+h2,
+h4 {
   display: block;
 }
 
@@ -29,6 +31,7 @@ a {
 header {
   display: flex;
   position: fixed;
+  background-color: black;
   width: 100%;
   height: 69px;
   border-bottom: 1px solid seashell;
@@ -49,4 +52,30 @@ img {
 nav span {
   display: inline-block;
   padding: 20px 10px;
+}
+
+/*Mission*/
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 0px 60px;
+  padding-top: 70px;
+  width: 1200px;
+}
+
+#mission {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../imgs/img-mission-background.jpg");
+  height: 700px;
+  justify-content: center;
+}
+
+#mission h2,
+#mission h4 {
+  align-content: center;
+  background-color: black;
+  padding: 10px;
+  margin: 0;
 }
