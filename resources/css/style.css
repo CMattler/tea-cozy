@@ -11,14 +11,6 @@ html {
 
 nav {
   margin-right: 10px;
-
-}
-
-div,
-nav,
-h2,
-h4 {
-  display: block;
 }
 
 a {
@@ -28,27 +20,58 @@ a {
 
 h2,
 h4 {
-
   background-color: black;
   padding: 10px;
   margin: 0;
 }
 
+.copyright,
+.footer,
+.location-container,
+#locations,
+.tea-container,
+.item,
+.tea-statement,
+#tea,
+#mission,
+.content,
+.logo,
+header {
+  display: flex;
+}
+
+.footer,
+#locations,
+.item,
+.tea-statement,
+#mission,
+.content {
+  flex-direction: column;
+}
+
+.content,
+#mission,
+#tea,
+.tea-container,
+#locations,
+.copyright {
+  justify-content: center;
+}
+
 /*Header*/
 
 header {
-  display: flex;
   position: fixed;
   background-color: black;
   width: 100%;
   height: 69px;
   border-bottom: 1px solid seashell;
+  margin-top: -8px;
   z-index: 1;
   align-items: center;
 }
 
 .logo {
-  display: flex;
   margin-left: 10px;
   flex-grow: 1;
 }
@@ -62,44 +85,33 @@ nav span {
   padding: 20px 10px;
 }
 
+.tea-container,
+#tea {
+  flex-wrap: wrap;
+}
+
 /*Mission*/
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: 0px 60px;
-  padding-top: 70px;
+  padding-top: 62px;
   width: 1200px;
 }
 
 #mission {
-  display: flex;
-  flex-direction: column;
   background-image: url("../imgs/img-mission-background.jpg");
   height: 700px;
-  justify-content: center;
 }
 
 /*Tea*/
 
 #tea {
-  display: flex;
-  flex-wrap: wrap;
   margin: auto;
   width :1000px;
-  padding-top: 70px;
-  justify-content: center;
-}
-
-.tea-statement {
-  display: flex;
-  flex-direction: column;
+  padding-top: 62px;
 }
 
 .item {
-  display: flex;
-  flex-direction: column;
   padding: 5px;
 }
 
@@ -109,14 +121,38 @@ nav span {
   height: 200px;
 }
 
-.tea-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 /*Locations*/
 
-#id {
-  
+#locations {
+padding-top: 70px;
+background-image: url("../imgs/img-locations-background.jpg");
+width: 1200px;
+height: 500px;
+}
+
+#locations h2 {
+  background-color: transparent;
+}
+
+.location-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.location-item {
+  background-color: black;
+  opacity: 1;
+  width: 300px;
+  margin: 15px 40px;
+}
+
+/*Footer*/
+
+.footer {
+  height: 200px;
+}
+
+.copyright {
+  justify-content: flex-start;
+  margin-left: 20px;
 }
